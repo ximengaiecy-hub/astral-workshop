@@ -1,0 +1,60 @@
+.cup-register-page { max-width: 1440px; margin: auto; padding: 60px 40px 100px; }
+.cup-register-heading h1 { margin: 18px 0; font-family: var(--font-display); font-size: clamp(36px,5vw,70px); line-height: 1.25; color: var(--paper); }
+.cup-register-heading > p:last-of-type { color: #c0b39c; }
+.cup-register-heading ol { display: flex; gap: 20px 38px; flex-wrap: wrap; padding: 28px 0; margin: 28px 0 40px; list-style: none; border-block: 1px solid #443725; color: #c7b18a; font-size: 13px; }
+.cup-register-page h2 { margin: 8px 0 18px; font-size: 25px; color: #e9dcc2; }
+.cup-register-page .cup-eyebrow { color: #c7ad7a; font-family: var(--font-mono); font-size: 11px; letter-spacing: .1em; }
+.cup-register-page .cup-form-hint { color: #b9ac95; font-size: 13px; line-height: 1.7; }
+.cup-register-page fieldset { min-width: 0; border: 0; padding: 0; margin: 0; }
+.cup-register-page input, .cup-register-page select, .cup-register-page textarea { color: #f0e7d6; background: #1d1b15; }
+.cup-register-page :focus-visible { outline: 2px solid #91c5c2; outline-offset: 4px; }
+.cup-register-page .button { min-height: 46px; }
+.cup-register-login, .cup-register-alert { padding: 24px; margin-bottom: 30px; background: #201e17; border: 1px solid #655234; }
+.cup-register-login p { margin-bottom: 20px; max-width: 760px; color: #c1b49d; }
+.cup-register-login .button { margin-right: 12px; margin-bottom: 8px; }
+.cup-register-alert { color: #efbda4; border-color: #88543b; }
+.cup-register-section-heading { display: flex; align-items: end; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-top: 40px; }
+.cup-register-section-heading a { color: #c9a45c; padding-block: 14px; }
+.cup-model-selection { color: #e3c58e; margin-top: 18px; font-size: 14px; }
+.cup-model-selection a { display: inline-flex; align-items: center; min-height: 44px; margin-left: 16px; text-decoration: underline; }
+.cup-model-choices { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 24px 18px; margin-top: 24px !important; }
+.cup-model-choices article { position: relative; border: 1px solid #34352c; background: #1b1d18; }
+.cup-model-choices article.selected { border-color: #d89251; box-shadow: 0 0 0 1px #d89251; }
+.cup-model-choices label { display: block; cursor: pointer; }
+.cup-model-choices input { position: absolute; top: 12px; left: 12px; accent-color: #c57940; width: 20px; height: 20px; }
+.cup-model-choices img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; }
+.cup-model-label { display: grid; gap: 8px; padding: 16px 14px 6px; overflow-wrap: anywhere; }
+.cup-model-label strong { font-size: 15px; color: #eee0c4; }
+.cup-model-label small { font-size: 11px; line-height: 1.5; color: #b6ac98; }
+.cup-model-label .cup-model-selected-count { color: #e3c58e; }
+.cup-model-choices article > a { display: inline-flex; min-height: 44px; align-items: center; padding: 0 14px; color: #c9b68e; font-size: 12px; }
+.cup-model-choices article > button { min-height: 44px; margin: 0 14px 12px; padding: 8px 12px; border: 1px solid #8a6a42; background: #29251b; color: #e3c58e; font-size: 12px; cursor: pointer; }
+.cup-model-choices article > button:disabled { opacity: .5; cursor: default; }
+.cup-registration-details { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; border-top: 1px solid #443725; padding-top: 40px; margin-top: 50px; }
+.cup-division-choices { display: grid; gap: 12px; }
+.cup-division-choices label { display: block; padding: 20px; border: 1px solid #49402d; cursor: pointer; }
+.cup-division-choices label.selected { background: #282015; border-color: #c18a4f; }
+.cup-division-choices input { accent-color: #c57940; margin-right: 10px; }
+.cup-division-choices strong { font-size: 20px; }
+.cup-division-choices strong span { float: right; font-variant-numeric: lining-nums tabular-nums; }
+.cup-division-choices small { display: block; margin-top: 10px; color: #c2b39a; }
+.cup-registration-details .cup-form { gap: 18px; }
+.cup-registration-details .cup-form input, .cup-registration-details .cup-form textarea { width: 100%; }
+.cup-registration-details input:read-only { color: #c9ad75; }
+.cup-registration-consent { display: flex !important; flex-direction: row !important; align-items: start; gap: 12px !important; }
+.cup-registration-consent input { width: 20px !important; height: 20px; flex: 0 0 auto; margin-top: 3px; accent-color: #c57940; }
+.cup-registration-summary { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; padding: 28px 0; border-top: 1px solid #655234; margin-top: 36px; }
+.cup-registration-summary p { font-size: 13px; color: #b9aa8e; margin-top: 8px; }
+.cup-registration-price { font-size: 32px; font-variant-numeric: lining-nums tabular-nums; margin-left: auto; }
+.cup-registration-receipt { padding: 32px; border: 1px solid #80653b; background: #1d1c15; }
+.cup-registration-receipt > p { max-width: 860px; color: #c7b99e; }
+.cup-registration-receipt dl { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin: 28px 0; }
+.cup-registration-receipt dt { font-size: 12px; color: #a28f6c; margin-bottom: 5px; }
+.cup-registration-receipt dd { overflow-wrap: anywhere; }
+.cup-registered-models { display: flex; flex-wrap: wrap; gap: 20px; margin-block: 28px; }
+.cup-registered-models figure { max-width: 300px; }
+.cup-registered-models img { width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; }
+.cup-registered-models figcaption { margin-top: 10px; }
+.cup-registered-models small { display: block; font-size: 11px; color: #a99b83; }
+@media(max-width:1000px){.cup-model-choices{grid-template-columns:repeat(3,minmax(0,1fr));}.cup-registration-details{gap:28px;}}
+@media(max-width:700px){.cup-register-page{padding:32px 18px 60px;}.cup-model-choices{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 10px;}.cup-model-label{padding:12px 10px 6px;}.cup-registration-details{grid-template-columns:1fr;}.cup-registration-receipt{padding:22px 16px;}.cup-registration-receipt dl{grid-template-columns:1fr;}.cup-registration-summary .button{width:100%;}.cup-register-heading ol{gap:14px 22px;}.cup-register-heading h1{font-size:38px;}}

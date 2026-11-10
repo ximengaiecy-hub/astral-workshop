@@ -1,0 +1,44 @@
+[
+  {
+    "id": "dwarf-01",
+    "name": "矮人探险者",
+    "modelId": "demo-dwarf",
+    "officialName": "Dwarf Explorer",
+    "source": "示例工坊",
+    "sourceId": "demo",
+    "series": "示例系列",
+    "issue": "演示期",
+    "sourceUrl": "https://example.com/",
+    "image": "/assets/demo-model.svg",
+    "width": 800,
+    "height": 800
+  },
+  {
+    "id": "dwarf-02",
+    "name": "遗迹守卫",
+    "modelId": "demo-sentinel",
+    "officialName": "Ruins Sentinel",
+    "source": "示例工坊",
+    "sourceId": "demo",
+    "series": "示例系列",
+    "issue": "演示期",
+    "sourceUrl": "https://example.com/",
+    "image": "/assets/demo-model.svg",
+    "width": 800,
+    "height": 800
+  },
+  {
+    "id": "dwarf-03",
+    "name": "山地巡林客",
+    "modelId": "demo-ranger",
+    "officialName": "Mountain Ranger",
+    "source": "示例工坊",
+    "sourceId": "demo",
+    "series": "示例系列",
+    "issue": "演示期",
+    "sourceUrl": "https://example.com/",
+    "image": "/assets/demo-model.svg",
+    "width": 800,
+    "height": 800
+  }
+]

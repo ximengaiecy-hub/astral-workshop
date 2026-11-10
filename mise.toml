@@ -1,0 +1,23 @@
+[tools]
+node = "24.14.1"
+
+[env]
+NEXT_TELEMETRY_DISABLED = "1"
+
+[tasks.install]
+run = "npm ci --include=dev --no-audit --no-fund"
+
+[tasks.dev]
+run = "node node_modules/next/dist/bin/next dev --webpack --hostname 0.0.0.0 --port 3015"
+
+[tasks.build]
+run = "node scripts/prepare-runtime.cjs"
+
+[tasks.start]
+run = "node .next/standalone/server.js"
+[tasks.start.env]
+HOSTNAME = "0.0.0.0"
+PORT = "9000"
+[meoo.deploy]
+mode = "server"
+port = 9000

@@ -1,0 +1,119 @@
+{
+  "models": [
+    {
+      "id": "demo-dwarf",
+      "name": "矮人探险者",
+      "officialName": "Dwarf Explorer",
+      "category": "冒险者",
+      "sourceId": "demo",
+      "series": "示例系列",
+      "issue": "演示期",
+      "sourceUrl": "https://example.com/",
+      "image": "/assets/demo-model.svg",
+      "prices": {
+        "supported": 8,
+        "white": 12,
+        "primer": 15
+      },
+      "multiplier": 1,
+      "note": "用于演示目录与报名选择的虚构模型。",
+      "evidence": [],
+      "printSize": "medium",
+      "modelKind": "棋子",
+      "taxonomy": {
+        "party": "adventurer",
+        "race": "矮人",
+        "charClass": "战士"
+      }
+    },
+    {
+      "id": "demo-sentinel",
+      "name": "遗迹守卫",
+      "officialName": "Ruins Sentinel",
+      "category": "怪物",
+      "sourceId": "demo",
+      "series": "示例系列",
+      "issue": "演示期",
+      "sourceUrl": "https://example.com/",
+      "image": "/assets/demo-model.svg",
+      "prices": {
+        "supported": 25,
+        "white": 29,
+        "primer": 32
+      },
+      "multiplier": 1,
+      "note": "用于演示目录与报名选择的虚构模型。",
+      "evidence": [],
+      "printSize": "medium",
+      "modelKind": "棋子",
+      "taxonomy": {
+        "party": "monster",
+        "race": "构装生物",
+        "charClass": ""
+      }
+    },
+    {
+      "id": "demo-ranger",
+      "name": "山地巡林客",
+      "officialName": "Mountain Ranger",
+      "category": "冒险者",
+      "sourceId": "demo",
+      "series": "示例系列",
+      "issue": "演示期",
+      "sourceUrl": "https://example.com/",
+      "image": "/assets/demo-model.svg",
+      "prices": {
+        "supported": 8,
+        "white": 12,
+        "primer": 15
+      },
+      "multiplier": 1,
+      "note": "用于演示目录与报名选择的虚构模型。",
+      "evidence": [],
+      "printSize": "medium",
+      "modelKind": "棋子",
+      "taxonomy": {
+        "party": "adventurer",
+        "race": "矮人",
+        "charClass": "游侠"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "demo",
+      "name": "示例工坊",
+      "englishName": "Demo Workshop",
+      "url": "https://example.com/",
+      "aliases": [
+        "Demo"
+      ]
+    }
+  ],
+  "bundles": [
+    {
+      "id": "demo-encounter",
+      "name": "遗迹遭遇 · 示例套装",
+      "kind": "encounter",
+      "description": "两枚用于演示目录的虚构棋子。",
+      "image": "/assets/demo-model.svg",
+      "items": [
+        {
+          "modelId": "demo-dwarf",
+          "quantity": 1,
+          "role": "冒险者",
+          "section": "演示",
+          "optional": false
+        },
+        {
+          "modelId": "demo-sentinel",
+          "quantity": 1,
+          "role": "怪物",
+          "section": "演示",
+          "optional": false
+        }
+      ]
+    }
+  ],
+  "modelAliases": {}
+}

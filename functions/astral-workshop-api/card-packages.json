@@ -1,0 +1,16 @@
+[
+  {
+    "id": "demo-cards",
+    "name": "探险笔记 · 示例卡组",
+    "price": 8,
+    "game": "桌游示例",
+    "category": "资料卡",
+    "description": "用于演示商品详情的虚构卡组。",
+    "contents": [
+      "行动速查",
+      "装备速查"
+    ],
+    "image": "/assets/demo-model.svg",
+    "unit": "套"
+  }
+]

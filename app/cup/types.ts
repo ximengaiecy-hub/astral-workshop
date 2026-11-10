@@ -1,0 +1,16 @@
+export type Division = 'beginner' | 'experienced';
+export const phases = ['upcoming', 'registration', 'painting', 'submission', 'voting', 'ended'] as const;
+export type Phase = (typeof phases)[number];
+export type EntryStatus = 'pending' | 'approved' | 'rejected' | 'hidden';
+export type CupEvent = { id: string; phase: Phase; updatedAt: string };
+export type CupEntry = { id: string; authorId: string; authorName: string; title: string; description: string; division: Division; images: string[]; status: EntryStatus; reviewNote: string; votes: number; createdAt: string };
+export type CupUser = { id: string; displayName: string; email: string; disabled: boolean; votesUsed: Record<Division, number>; votedAuthors: Record<Division, string[]> };
+export type CupRegistrationModel = { id: string; name: string; officialName: string; source: string; series: string; issue: string; sourceUrl: string; image: string };
+export type CupRegistration = { id: string; order_id: string | null; member_id: string; display_name: string; email: string; division: Division; models: CupRegistrationModel[]; recipient: string; phone: string; address: string; contact: string; fee_cents: number; created_at: string };
+export type CupStatus = { event: CupEvent; entries: CupEntry[]; myEntries: CupEntry[]; user: CupUser | null; registration: CupRegistration | null; page: number; hasMore: boolean; authReady?: boolean; fallbackAt?: string };
+export type CupMember = { id: string; email: string; displayName: string; disabled: boolean; createdAt: string; lastLoginAt: string };
+export type CupVote = { id: string; voterId: string; voterEmail: string; authorId: string; authorName: string; entryId: string; entryTitle: string; division: Division; createdAt: string };
+export type CupAudit = { id: string; actor: string; action: string; target: string; createdAt: string };
+export type CupAdminData = { event: CupEvent; entries: CupEntry[]; members: CupMember[]; votes: CupVote[]; audit: CupAudit[]; registrations: CupRegistration[] };
+export const divisionNames: Record<Division, string> = { beginner: '新手组', experienced: '老手组' };
+export const phaseNames: Record<Phase, string> = { upcoming: '未开始', registration: '报名阶段', painting: '涂装创作', submission: '投稿阶段', voting: '公开投票阶段', ended: '本届已结束' };
